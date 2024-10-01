@@ -1,18 +1,16 @@
-[![Go Reference](https://pkg.go.dev/badge/github.com/smtp2go-oss/smtp2go-go.svg)](https://pkg.go.dev/github.com/smtp2go-oss/smtp2go-go)
-[![Build Status](https://travis-ci.org/smtp2go-oss/smtp2go-go.svg?branch=master)](https://travis-ci.org/smtp2go-oss/smtp2go-go)
-[![license](https://img.shields.io/github/license/smtp2go-oss/smtp2go-go.svg)]()
-
 # SMTP2GO API
 
 Go wrapper around the SMTP2GO [/email/send](https://apidoc.smtp2go.com/documentation/#/POST%20/email/send) API endpoint.
 
+#### Fork of [smtp2go-oss/smtp2go-go](https://github.com/smtp2go-oss/smtp2go-go) to add support for file attachments.
+
 ## Installation
 
-`go get github.com/smtp2go-oss/smtp2go-go`
+`go get github.com/AleksiAlho/smtp2go-go`
 
 Add the import in your source file
 
-`import "github.com/smtp2go-oss/smtp2go-go"`
+`import "github.com/AleksiAlho/smtp2go-go"`
 
 ## Usage
 
@@ -39,7 +37,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/smtp2go-oss/smtp2go-go"
+	"github.com/AleksiAlho/smtp2go-go"
 )
 
 func main() {
@@ -68,7 +66,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/smtp2go-oss/smtp2go-go"
+	"github.com/AleksiAlho/smtp2go-go"
 )
 
 func main() {

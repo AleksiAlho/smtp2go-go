@@ -6,15 +6,23 @@ import (
 	"fmt"
 )
 
+// Attachment struct to hold information about an attachment
+type Attachment struct {
+	Filename string `json:"filename"`
+	Fileblob string `json:"fileblob"`
+	Mimetype string `json:"mimetype"`
+}
+
 // Email holds the data used to send the email
 type Email struct {
-	From         string      `json:"sender"`
-	To           []string    `json:"to"`
-	Subject      string      `json:"subject"`
-	TextBody     string      `json:"text_body"`
-	HtmlBody     string      `json:"html_body"`
-	TemplateID   string      `json:"template_id"`
-	TemplateData interface{} `json:"template_data"`
+	From         string       `json:"sender"`
+	To           []string     `json:"to"`
+	Subject      string       `json:"subject"`
+	TextBody     string       `json:"text_body"`
+	HtmlBody     string       `json:"html_body"`
+	TemplateID   string       `json:"template_id"`
+	TemplateData interface{}  `json:"template_data"`
+	Attachments  []Attachment `json:"attachments"`
 }
 
 // SendAsyncResult result struct from async send call
